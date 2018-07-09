@@ -1,0 +1,274 @@
+﻿@model Person
+@{
+    ViewBag.Title = "CV";
+}
+
+<!-- Section CV -->
+<section id="about" class="about">
+
+    <div class="intro">
+        <form asp-controller="Home" asp-action="Edit" method="post" class="form-horizontal">
+            <div class="section-header">
+                <h2> CV </h2><br />
+            </div>
+
+            <h4>Personal Information</h4>
+
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="container">
+                <label asp-for="FullName" class="col-sm-4">Full Name:</label>
+                <input asp-for="FullName" class="form-control text-center" placeholder="Enter Full Name here." />
+            </div>
+
+
+
+
+            <div class="container">
+                <label asp-for="Address" class="col-sm-4">Address:</label>
+                <input asp-for="Address" class="form-control text-center" placeholder="Enter address here." />
+            </div>
+            <div class="container">
+                <label asp-for="Phone" class="col-sm-4">Phone No.:</label>
+                <input asp-for="Phone" class="form-control text-center" placeholder="Enter phone number here." />
+            </div>
+            <div class="container">
+                <label asp-for="Email" class="col-sm-4">E-mail:</label>
+                <input asp-for="Email" class="form-control text-center" placeholder="Enter e-mail here." />
+            </div>
+            <div class="container">
+                <label asp-for="Nationality" class="col-sm-4">Nationality</label>
+                <input asp-for="Nationality" class="form-control text-center" placeholder="Enter nationality here." />
+            </div>
+            <div class="container">
+                <label asp-for="DateOfBirth" class="col-sm-4">Birth date:</label>
+                <input asp-for="DateOfBirth" class="form-control text-center" placeholder="Enter birth date here." />
+
+            </div>
+
+
+
+            <h4>Working Experience</h4>
+
+            <div class="container">
+                <label asp-for="WorkDateFrom" class="col-sm-4">Date (from - to):</label>
+                <input asp-for="WorkDateFrom" class="form-control col-sm-4 text-center" placeholder="Enter start date here." />
+                <input asp-for="WorkDateTo" class="form-control col-sm-4 text-center" placeholder="Enter end date here." />
+
+            </div>
+            <div class="container">
+                <label asp-for="Employer" class="col-sm-4">Employer name:</label>
+                <input asp-for="Employer" class="form-control text-center" placeholder="Enter employer name here." />
+
+            </div>
+            <div class="container">
+                <label asp-for="WorkOccupation" class="col-sm-4">Occupation:</label>
+                <input asp-for="WorkOccupation" class="form-control text-center" placeholder="Enter occupation here." />
+
+            </div>
+            <div class="container">
+                <label asp-for="WorkMainActAndResp" class="col-sm-4">Main activities and responsibilities:</label>
+                <textarea asp-for="WorkMainActAndResp" class="form-control" rows="5" placeholder="Enter activities and responsibilities here."></textarea>
+            </div>
+
+            <h2>Education and Training</h2>
+
+            <div class="container">
+                <label asp-for="UniversityName" class="col-sm-4">University name:</label>
+                <input asp-for="UniversityName" class="form-control text-center" placeholder="Enter university name here." />
+
+            </div>
+            <div class="container">
+                <label asp-for="EdDateFrom" class="col-sm-4">Date (from-to):</label>
+                <input asp-for="EdDateFrom" class="form-control col-sm-4 text-center" placeholder="Enter start date here." />
+                <input asp-for="EdDateTo" class="form-control col-sm-4 text-center" placeholder="Enter end date here." />
+            </div>
+            <div class="container">
+                <label asp-for="EdQualification" class="col-sm-4">Qualification:</label>
+                <input asp-for="EdQualification" class="form-control text-center" placeholder="Enter qualification here." />
+            </div>
+            <div class="container">
+                <label asp-for="EdOccupation" class="col-sm-4">Occupation:</label>
+                <input asp-for="EdOccupation" class="form-control text-center" placeholder="Enter occupation here." />
+            </div>
+
+            <h4>Personal Skills and Competences</h4>
+
+            <div class="container">
+                <label asp-for="MotherLanguage" class="col-sm-4">Mother Language:</label>
+                <input asp-for="MotherLanguage" class="form-control text-center" placeholder="Enter mother language here." />
+
+            </div>
+            <div class="container">
+                <label asp-for="Language" class="col-sm-4">Language:</label>
+                <input asp-for="Language" class="form-control text-center" placeholder="Enter language here." />
+
+            </div>
+
+            <ul class="list-unstyled">
+                <li>
+                    <div class="container">
+                        <label asp-for="ReadingSkills" class="col-sm-4">Reading skills:</label>
+                        <input asp-for="ReadingSkills" class="form-control text-center" placeholder="Enter language reading skill here." />
+
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <label asp-for="WritingSkills" class="col-sm-4 ">Writing skills:</label>
+                        <input asp-for="WritingSkills" class="form-control text-center" placeholder="Enter language writing skill here." />
+
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <label asp-for="VerbalSkills" class="col-sm-4">Verbal skills:</label>
+                        <input asp-for="VerbalSkills" class="form-control text-center" placeholder="Enter language verbal skill here." />
+
+                    </div>
+                </li>
+            </ul>
+
+            <h4>Social skills and competences</h4>
+
+            <ul class="list-unstyled">
+                <li>
+                    <div class="container">
+                        <textarea asp-for="SocSkill1" class="form-control text-center col-sm-offset-4" rows="2"  placeholder="Enter social skill here." ></textarea>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <textarea asp-for="SocSkill2" class="form-control text-center col-sm-offset-4" rows="2" placeholder="Enter social skill here." ></textarea>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <textarea asp-for="SocSkill3" class="form-control text-center col-sm-offset-4"  rows="2" placeholder="Enter social skill here." ></textarea>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <textarea asp-for="SocSkill4" class="form-control text-center col-sm-offset-4" rows="2" placeholder="Enter social skill here." ></textarea> 
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <textarea asp-for="SocSkill5" class="form-control text-center col-sm-offset-4" rows="2" placeholder="Enter social skill here." ></textarea>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <textarea asp-for="SocSkill6" class="form-control text-center col-sm-offset-4" rows="2" placeholder="Enter social skill here." ></textarea>
+                    </div>
+                </li>
+            </ul>
+            <br />
+            <br />
+
+            <h4>Organization skills and competences</h4>
+            <ul class="list-unstyled">
+                <li>
+                    <div class="container">
+                        <input asp-for="OrgSkill" class="form-control text-center col-sm-offset-4" placeholder="Enter organization skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="OrgSkill1" class="form-control text-center col-sm-offset-4" placeholder="Enter organization skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="OrgSkill2" class="form-control text-center col-sm-offset-4" placeholder="Enter organization skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="OrgSkill3" class="form-control text-center col-sm-offset-4" placeholder="Enter organization skill here." />
+                    </div>
+                </li>
+            </ul>
+
+            <h4>Technical skills and competences</h4>
+            <label>Working knowledge:</label>
+            <ul class="list-unstyled">
+                <li>
+                    <div class="container">
+                        <input asp-for="WorkSkill" class="form-control text-center col-sm-offset-4" placeholder="Enter working skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="WorkSkill1" class="form-control text-center col-sm-offset-4" placeholder="Enter working skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="WorkSkill2" class="form-control text-center col-sm-offset-4" placeholder="Enter working skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="WorkSkill3" class="form-control text-center col-sm-offset-4" placeholder="Enter working skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="WorkSkill4" class="form-control text-center col-sm-offset-4" placeholder="Enter working skill here." />
+
+                    </div>
+                </li>
+            </ul>
+            <label>Basic knowledge:</label>
+            <ul class="list-unstyled">
+                <li>
+                    <div class="container">
+                        <input asp-for="BasicSkill" class="form-control text-center col-sm-offset-4" placeholder="Enter basic skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="BasicSkill1" class="form-control text-center col-sm-offset-4" placeholder="Enter basic skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="BasicSkill2" class="form-control text-center col-sm-offset-4" placeholder="Enter basic skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="BasicSkill3" class="form-control text-center col-sm-offset-4" placeholder="Enter basic skill here." />
+                    </div>
+                </li>
+            </ul>
+            <h4>Artistic skills and competences</h4>
+            <ul class="list-unstyled">
+                <li>
+                    <div class="container">
+                        <input asp-for="ArtSkill" class="form-control text-center col-sm-offset-4" placeholder="Enter art skill here." />
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input asp-for="ArtSkill1" class="form-control text-center col-sm-offset-4" placeholder="Enter art skill here." />
+                    </div>
+                </li>
+            </ul>
+
+
+            <h4>Additional Information</h4>
+
+            <div class="container">
+                <textarea asp-for="AdditionalInformation" class="form-control col-sm-offset-4" rows="10">
+                </textarea>
+
+            </div>
+            <br />
+            <input type="submit" value="OK" class="btn btn-default center-block" />
+            <br />
+        </form>
+    </div>
+</section>
+<!-- Section CV end -->

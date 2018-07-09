@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FullName>Martin Stefanov Valchanov </FullName>
+  <Address>Sofia</Address>
+  <Phone>+359899812624</Phone>
+  <E-mail>msvalchanov@gmail.com</E-mail>
+  <Nationality>Bulgarian</Nationality>
+  <DateOfBiirth>15.03.1993</DateOfBiirth>
+  <WorkDateFrom>01.12.2016</WorkDateFrom>
+  <WorkDateTo>02.11.2017</WorkDateTo>
+  <Employer>Aramet Ltd.</Employer>
+  <WorkOccupation>Technician - mechanic</WorkOccupation>
+  <WorkMainActAndResp>Organize technical tasks, Machines maintenances, Communication with customers and manufacturers, Translation of the user manuals for machines from English to Bulgarian</WorkMainActAndResp>
+  <UniversityName>Software University</UniversityName>
+  <EdDateFrom>01.01.2018</EdDateFrom>
+  <EdDateTo>-</EdDateTo>
+  <EdQualification>Software Engineer</EdQualification>
+  <EdOccupation> - </EdOccupation>
+  <MotherLanguage>Bulgarian</MotherLanguage>
+  <Language>English</Language>
+  <ReadingSkills>Good</ReadingSkills>
+  <WritingSkills>Good</WritingSkills>
+  <VerbalSkills>Good</VerbalSkills>
+  <SocSkill1>Responsibility and striving to achieve results</SocSkill1>
+  <SocSkill2>Motivation and good concentration</SocSkill2>
+  <SocSkill3>Excellent communication skill</SocSkill3>
+  <SocSkill4>Correct and loyal</SocSkill4>
+  <SocSkill5>Work effectively both as team member and independently</SocSkill5>
+  <SocSkill6>Easy and quick to adapt in new environment</SocSkill6>
+  <OrgSkill>Organized</OrgSkill>
+  <OrgSkill1>Creative</OrgSkill1>
+  <OrgSkill2>Flexible</OrgSkill2>
+  <OrgSkill3>Persistent</OrgSkill3>
+  <WorkSkill>MS Office( Word, Excel, PowerPoint)</WorkSkill>
+  <WorkSkill1>MS Windows</WorkSkill1>
+  <WorkSkill2>Linux</WorkSkill2>
+  <WorkSkill3>C#</WorkSkill3>
+  <WorkSkill4>SQL, T-SQL</WorkSkill4>
+  <BasicSkill>JavaScript</BasicSkill>
+  <BasicSkill1>PHP</BasicSkill1>
+  <BasicSkill2>Java</BasicSkill2>
+  <BasicSkill3>GitHub</BasicSkill3>
+  <ArtSkill>Adobe Photoshop</ArtSkill>
+  <ArtSkill1>Adobe Illustrator</ArtSkill1>
+  <AdditionalInformation>I participated in many computer science and math competitions at different levels in school.Some of them are national, others – regional level. All of my places are in top 10. I successfully achieved 1st place in national competition – third national competition of IT – Blagoevgrad city 2011 category “application programs” – IX – XII class.</AdditionalInformation>
+</Person>
